@@ -4,3 +4,6 @@ requires = ["setuptools", "wheel"]
 [tool.coverage.run]
 branch = true
 source = ["src/"]
+
+[tool.mypy]
+files = ["*.py", "src/*/*.py"]

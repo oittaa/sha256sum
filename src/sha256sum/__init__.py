@@ -11,6 +11,6 @@ def sha256sum(filename: str) -> str:
     byte_array = bytearray(BLOCK_SIZE)
     memory_view = memoryview(byte_array)
     with open(filename, "rb", buffering=0) as file:
-        for block in iter(lambda: file.readinto(memory_view), 0):
+        for block in iter(lambda: file.readinto(memory_view), 0):  # type: ignore
             hash_func.update(memory_view[:block])
     return hash_func.hexdigest()
