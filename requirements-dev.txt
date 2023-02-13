@@ -1,4 +1,4 @@
 coverage[toml]==6.5.0
 flake8==5.0.4
 mypy==0.982
-pylint==2.15.5
+pylint==2.16.2
